@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class EmPubLiteActivity extends Activity {
     @Override
@@ -22,8 +23,14 @@ public class EmPubLiteActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
         case R.id.about:
+            Intent i = new Intent(this, SimpleContentActivity.class);
+            startActivity(i);
+
             return true;
         case R.id.help:
+            i = new Intent(this, SimpleContentActivity.class);
+            startActivity(i);
+
             return true;
         }
         return super.onOptionsItemSelected(item);
