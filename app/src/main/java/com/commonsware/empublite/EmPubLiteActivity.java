@@ -35,12 +35,16 @@ public class EmPubLiteActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
         case R.id.about:
-            Intent i = new Intent(this, SimpleContentActivity.class);
+            Intent i = new Intent(this, SimpleContentActivity.class)
+                .putExtra(SimpleContentActivity.EXTRA_FILE,
+                          "file:///android_asset/misc/about.html");
             startActivity(i);
 
             return true;
         case R.id.help:
-            i = new Intent(this, SimpleContentActivity.class);
+            i = new Intent(this, SimpleContentActivity.class)
+                .putExtra(SimpleContentActivity.EXTRA_FILE,
+                          "file:///android_asset/misc/help.html");
             startActivity(i);
 
             return true;
