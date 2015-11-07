@@ -26,7 +26,7 @@ public class SimpleContentFragment extends WebViewFragment {
         setRetainInstance(true);
     }
 
-    @SuppressLint("SetJavascriptEnabled")
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,
