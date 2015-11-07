@@ -5,7 +5,7 @@
     tools:context=".EmPubLiteActivity">
 
     <ProgressBar
-        style="@android:style/Widget.ProgressBar.Large"
+        style="?android:attr/progressBarStyleLarge"
         android:id="@+id/progressBar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
